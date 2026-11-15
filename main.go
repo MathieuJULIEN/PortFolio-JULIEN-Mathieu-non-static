@@ -53,12 +53,13 @@ type Experience struct {
 	Name       string
 	LienGithub string
 	Image      []string
+	DescripImg []string
 }
 
 var listExperience = []Experience{
-	{1, "Projet Morpion", "https://github.com/MathieuJULIEN/Morpion-py", []string{"/static/image/morpion/morpion-en-jeu.png", "/static/image/morpion/rendu-global-code-morpion.png", "/static/image/morpion/start-morpion.png"}},
-	{2, "Projet Crypt-Decrypt", "https://github.com/MathieuJULIEN/Micro-CryptDecrypt", []string{"/static/image/crypt-decrypt/1er-rendu-global-crypt-decrypt.png", "/static/image/crypt-decrypt/2eme-rendu-global-crypt-decrypt.png", "/static/image/crypt-decrypt/arboressance-crypt-decrypt.png", "/static/image/crypt-decrypt/fonctionnement-crypt.png", "/static/image/crypt-decrypt/fonctionnement-decrypt.png", "/static/image/crypt-decrypt/lancement-crypt-decrypt.png"}},
-	{3, "Projet Jeu du Pendu", "https://github.com/kost84/TP-Jeu-du-pendu-CLI", []string{"/static/image/pendu/arboressance-pendu.png", "/static/image/pendu/fonctionnement-pendu.png", "/static/image/pendu/lancement-pendu.png", "/static/image/pendu/rendu-global-pendu.png"}},
+	{1, "Projet Morpion", "https://github.com/MathieuJULIEN/Morpion-py", []string{"/static/image/morpion/morpion-en-jeu.png", "/static/image/morpion/rendu-global-code-morpion.png", "/static/image/morpion/start-morpion.png"}, []string{"Image du déroulement du morpion", "Image du rendu global du code du morpion", "Image du commencement du morpion"}},
+	{2, "Projet Crypt-Decrypt", "https://github.com/MathieuJULIEN/Micro-CryptDecrypt", []string{"/static/image/crypt-decrypt/1er-rendu-global-crypt-decrypt.png", "/static/image/crypt-decrypt/2eme-rendu-global-crypt-decrypt.png", "/static/image/crypt-decrypt/arboressance-crypt-decrypt.png", "/static/image/crypt-decrypt/fonctionnement-crypt.png", "/static/image/crypt-decrypt/fonctionnement-decrypt.png", "/static/image/crypt-decrypt/lancement-crypt-decrypt.png"}, []string{"1er rendu global du code", "2er rendu global du code", "Arboressance du crypt-decrypt", "Fonctionnement de la partie cryptage", "Fonctionnement de la partie décryptage", "Rendu du Lancement du crypt-decrypt"}},
+	{3, "Projet Jeu du Pendu", "https://github.com/kost84/TP-Jeu-du-pendu-CLI", []string{"/static/image/pendu/arboressance-pendu.png", "/static/image/pendu/fonctionnement-pendu.png", "/static/image/pendu/lancement-pendu.png", "/static/image/pendu/rendu-global-pendu.png"}, []string{"Arboressance code du pendu", "Image du déroulement du pendu", "Image du commencement du pendu", "Image du rendu global du code du pendu"}},
 }
 
 func ExperienceHendler(w http.ResponseWriter, r *http.Request) {
