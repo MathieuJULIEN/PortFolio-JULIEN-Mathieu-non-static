@@ -1,14 +1,15 @@
 {{define "index"}}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>Home</title>
-</head>
-<body>
-    <p>Page home</p>
-</body>
-</html>
+{{template "header" "HOME"}}
+        <h1>PorteFolio Mathieu JULIEN</h1>
+        <p>
+            Bonjour, je m'appelle Mathieu JULIEN, je suis étudiant à YNOV en B1 je suis en Informatique IA-DATA.
+            <br>J'ai été en au lycée Général pour obtenir mon BAC avec la spécialité NSI ce qui ma permis d'apprendre le Python mis à profit pour faire le projet Morpion.
+            <br>Actuellement je connais donc plusieurs langages de developpement tels que :
+            <ul class="liste-competence">
+                <li>Python</li>
+                <li>Golang</li>
+                <li>HTML / CSS / JS</li>
+            </ul>
+        </p>
+{{template "footer"}}
 {{end}}
