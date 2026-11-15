@@ -5,7 +5,7 @@
         <a href={{.LienGithub}} class="lien-github">GitHub {{.Name}}</a>
         <br><br><br><h3>Image du Projet :</h3>
         {{range .Image}}
-        <br><img src="{{.}}" alt="Une des images de présentation du Projet">
+        <br><img src="{{index . 0}}" alt="{{index . 1}}">
         {{end}}
         <br><br><br>
 {{template "footer"}}
