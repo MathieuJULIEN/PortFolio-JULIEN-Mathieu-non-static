@@ -1,3 +1,104 @@
-p {
-    color: #00f;
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #000;
+    min-height: 98%;
+}
+
+.header {
+    display: flex;
+    background-color: #278;
+    color: #fff;
+    text-align: center;
+}
+
+.title-header {
+    margin-left: 2%;
+}
+
+.buton {
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    background-color: #167;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.all-buton-header{
+    margin-left: auto;
+    margin-top: 0.5%;
+    padding: 0.5rem;
+}
+
+h1 {
+    margin-left: 7%;
+}
+
+.liste-competence{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home {
+    background-color: #278;
+    border: none;
+}
+
+footer {
+    display: flex;
+    background-color: #167;
+    text-align: center;
+    margin-top: auto;
+}
+
+.title-footer {
+    margin-left: 2%;
+}
+
+.all-buton-footer {
+    margin-left: auto;
+    margin-top: 0.5%;
+    padding: 0.5rem;
+}
+
+.buton-footer {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-color: #056;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.lien-email {
+    color: #fff;
+}
+
+.buton-projet{
+    border: none;
+    border-radius: 20px;
+    background-color: #348;
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 0.5rem;
+}
+
+.lien-github {
+    color: #f5f5f5;
+    font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-left: 3%;
 }

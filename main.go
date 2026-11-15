@@ -34,8 +34,8 @@ func renderTemplate(w http.ResponseWriter, name string, data interface{}) {
 		http.Error(w, "Erreur chargement de la page", http.StatusInternalServerError)
 	}
 
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	w.WriteHeader(http.StatusOK)
-	w.Header().Set("Content-Type", "text/html")
 	buffer.WriteTo(w)
 }
 
@@ -46,5 +46,7 @@ func homeHendler(w http.ResponseWriter, r *http.Request) {
 }
 
 func notFound(w http.ResponseWriter, r *http.Request) {
-	log.Printf("Request : %s")
+	log.Printf("Request : %s %s", r.Method, r.URL.Path)
+
+	renderTemplate(w, "error", nil)
 }
