@@ -16,7 +16,7 @@ func main() {
 	router.HandleFunc("/{$}", homeHendler)
 	router.HandleFunc("/", notFound)
 	router.HandleFunc("/experience-list", ExperienceHendler)
-	router.HandleFunc("/experience-list/{id}", ExperienceByHendler)
+	router.HandleFunc("/experience-details/{id}", ExperienceByHendler)
 
 	fileServer := http.FileServer(http.Dir("./assets"))
 	router.Handle("/static/", http.StripPrefix("/static/", fileServer))
