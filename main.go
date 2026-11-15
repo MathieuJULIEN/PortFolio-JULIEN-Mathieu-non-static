@@ -56,9 +56,9 @@ type Experience struct {
 }
 
 var listExperience = []Experience{
-	{1, "Projet Morpion", "https://github.com/MathieuJULIEN/Morpion-py", []string{"morpion-en-jeu.png", "rendu-global-code-morpion.png", "start-morpion.png"}},
-	{2, "Projet Crypt-Decrypt", "https://github.com/MathieuJULIEN/Micro-CryptDecrypt", []string{"1er-rendu-global-crypt-decrypt.png", "2eme-rendu-global-crypt-decrypt.png", "arboressance-crypt-decrypt.png", "fonctionnement-crypt.png", "fonctionnement-decrypt.png", "lancement-crypt-decrypt.png"}},
-	{3, "Projet Jeu du Pendu", "https://github.com/kost84/TP-Jeu-du-pendu-CLI", []string{"arboressance-pendu.png", "fonctionnement-pendu.png", "lancement-pendu.png", "rendu-global-pendu.png"}},
+	{1, "Projet Morpion", "https://github.com/MathieuJULIEN/Morpion-py", []string{"/static/image/morpion/morpion-en-jeu.png", "/static/image/morpion/rendu-global-code-morpion.png", "/static/image/morpion/start-morpion.png"}},
+	{2, "Projet Crypt-Decrypt", "https://github.com/MathieuJULIEN/Micro-CryptDecrypt", []string{"/static/image/crypt-decrypt/1er-rendu-global-crypt-decrypt.png", "/static/image/crypt-decrypt/2eme-rendu-global-crypt-decrypt.png", "/static/image/crypt-decrypt/arboressance-crypt-decrypt.png", "/static/image/crypt-decrypt/fonctionnement-crypt.png", "/static/image/crypt-decrypt/fonctionnement-decrypt.png", "/static/image/crypt-decrypt/lancement-crypt-decrypt.png"}},
+	{3, "Projet Jeu du Pendu", "https://github.com/kost84/TP-Jeu-du-pendu-CLI", []string{"/static/image/pendu/arboressance-pendu.png", "/static/image/pendu/fonctionnement-pendu.png", "/static/image/pendu/lancement-pendu.png", "/static/image/pendu/rendu-global-pendu.png"}},
 }
 
 func ExperienceHendler(w http.ResponseWriter, r *http.Request) {
