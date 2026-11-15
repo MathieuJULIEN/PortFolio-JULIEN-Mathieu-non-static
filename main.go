@@ -82,7 +82,7 @@ func ExperienceByHendler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	http.Error(w, "Produit introuvable...", http.StatusNotFound)
+	http.Error(w, "Exeperience introuvable", http.StatusNotFound)
 }
 
 func notFound(w http.ResponseWriter, r *http.Request) {
