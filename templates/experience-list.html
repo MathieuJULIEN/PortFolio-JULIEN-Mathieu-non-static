@@ -1,0 +1,12 @@
+{{define "experience-list"}}
+{{template "header" "Liste Projet"}}
+        <h1 class="title">Liste Projet :</h1>
+        <div>
+            <li class="all-buton-sommaire">
+                {{range .}}
+                <ul><button class="buton-projet"><a href="/experience/{{.Id}}" class="buton-projet">{{.Name}}</a></button></ul>
+                {{end}}
+            </li>
+        </div>
+{{template "footer"}}
+{{end}}
